@@ -423,7 +423,7 @@ h3 {
 }
 
 [dir="ltr"] .hero-media img {
-  transform: scaleX(-1);
+  transform: none;
 }
 
 @media (max-width: 860px) {
