@@ -339,3 +339,17 @@ const savedTheme =
 languageSelect.value = translations[savedLanguage] ? savedLanguage : "en";
 applyTheme(savedTheme);
 applyLanguage(languageSelect.value);
+// ... existing code above ...
+
+languageSelect.value = translations[savedLanguage] ? savedLanguage : "en";
+applyTheme(savedTheme);
+applyLanguage(languageSelect.value);
+
+// Force the page to scroll to the top on refresh
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('beforeunload', () => {
+    window.scrollTo(0, 0);
+});
