@@ -422,7 +422,7 @@ h3 {
   margin-left: 0;
 }
 
-[dir="rtl"] .hero-media img {
+[dir="ltr"] .hero-media img {
   transform: scaleX(-1);
 }
 
